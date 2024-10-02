@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --btncolor: #75cceb;
+  --pricecolor: #317189;
+  --textcolor: #31546d;
+}
+
+.hero1 {
+  background-image: url("/images/white1.png"), url("/images/Frame 5.png");
+  background-size: contain, cover;
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.cart{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart .hamburger{
+  display: none;
+}
+
+.content {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info p {
+  max-width: 35%;
+  color: var(--textcolor);
+  font-size: larger;
+  padding: 30px 30px 0px 0px;
+}
+.info p:nth-child(1) {
+  font-size:50px;
+  color: white;
+}
+
+.info h1 {
+  font-size: 80px;
+  color: white;
+}
+
+.shop {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.shop button {
+  padding: 15px 40px;
+  background-color: white;
+  border-radius: 18px;
+  color: var(--textcolor);
+  font-weight: bold;
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+}
+.shop a {
+  text-decoration: none;
+  color: var(--textcolor);
+  font-size: larger;
+}
+
+.box {
+    position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.box img {
+  background-color: transparent;
+  height: 35vh;
+  padding-top: 60px;
+}
+
+.box p {
+  width: auto;
+  background-color: transparent;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+
+.text{
+    display: flex;
+    gap: 5px;
+
+}
+.text p:nth-child(1){
+    color: #317189;
+}
+.text p:nth-child(2){
+    color: #317189;
+    font-weight: bold;
+}
+
+.new{
+position: absolute;
+left: 0;
+top: 60px;
+}
+.new button{
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ border-radius: 4px;
+    background: #8A93E5;
+}
+
+.selection-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.arrow {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow img:hover{
+    height: 30px;
+}
+
+.dotss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.dots svg:hover circle {
+  fill: #8a93e5;
+  cursor: pointer;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll img {
+  position: absolute;
+  bottom: 40px;
+}
+
+
+.hero2 {
+  min-height: 100vh;
+}
+
+.products {
+  color: var(--textcolor);
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 0px 0px;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+  margin: 40px;
+  font-size: larger;
+  color: var(--textcolor);
+  font-weight: bold;
+}
+
+.one {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.one p:nth-child(1) {
+  color: #9ab0c0;
+}
+.two {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.two p:nth-child(1) {
+  color: #9ab0c0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 40px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  justify-content: center;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+  font-size: larger;
+  border: 2px solid #F2F2F2;
+  margin: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .card p:nth-child(2){
+    color: Gray 2;
+  }
+  
+  .card p:nth-child(3){
+    color: var(--textcolor);
+    font-weight: bold;
+  }
+
+.card button {
+  padding: 15px 50px;
+  background-color: white;
+  border-radius: 18px;
+  color: #75cceb;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #75cceb;
+}
+
+.card button:hover {
+  color: white;
+  border: none;
+  padding: 18px 53px;
+  background: linear-gradient(to right, #75CCEB, #6FB4FF);
+  box-shadow: 0 4px 20px #75cceb;
+}
+
+/* page 3 designs */
+
+.hero3 {
+  background-image: url("/images/white3.png"), url("/images/Frame 5.png");
+  background-size: cover, cover;
+  background-position: center, bottom;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+}
+
+.view button  {
+  padding: 15px 50px;
+  background-color: white;
+  border-radius: 18px;
+  color: #75cceb;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #75cceb;
+}
+.view button:hover {
+  color: white;
+  border: none;
+  padding:18px 53px;
+  background: linear-gradient(to right, #75CCEB, #6FB4FF);
+  box-shadow: 0 4px 20px #75cceb;
+}
+
+.view{
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px 0px 0px;
+
+}
+
+.data{
+    display: flex;
+    align-items: center;
+}
+
+.dataset{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: end;
+    width: 50%;
+    color: var(--textcolor);
+}
+.dataset p:nth-child(1){
+    font-size:xx-large;
+}
+.dataset h1{
+    font-size:60px;
+    padding-bottom: 20px;
+
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price p:nth-child(1){
+    color: #41A0B7;
+    text-decoration: line-through;
+    font-size: 24px;
+}
+.price p:nth-child(2){
+    color: #E35B3E;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.dataset p{
+max-width: 415px;
+}
+
+.dataset button  {
+    padding: 18px 53px;
+    background: linear-gradient(to right, #75CCEB, #6FB4FF);
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 30px 0px;
+
+  }
+
+  .design{
+    margin: 400px 0px;
+    position: relative;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;  
+}
+      
+      .circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;      }
+      
+      .item {
+        position: absolute;
+      }
+      .circle1 {
+        margin-top: 200px;
+      }
+
+
+footer{
+    background-color: #0A294DCC;
+    height: 269px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .info p {
+    max-width: 80%;
+  }
+
+  .box {
+    position: relative;
+  width: 350px;
+  height: 350px;
+}
+ 
+  .data{
+    flex-direction: column;
+  }
+  .dataset{
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .view{
+    margin-left:35px ;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  nav ul{
+display: none;
+  }
+  .cart .hamburger{
+    display: block;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .scroll img {
+    position: relative;
+    bottom: 0;
+  }
+  
+  
+  .info p {
+    max-width: 80%;
+  }
+
+  .box {
+    position: relative;
+  width: 350px;
+  height: 350px;
+}
+ 
+  .data{
+    flex-direction: column;
+  }
+  .dataset{
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .view{
+    margin-left:35px ;
+  }
+.design{
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .info p {
+    max-width: 90%;
+    font-size: small;
+
+  }
+  .info p:nth-child(1) {
+    font-size:30px;
+  }
+  
+  .info h1 {
+    font-size: 50px;
+  }
+  .products {
+  font-size: xx-large;
+  }
+  .one {
+    font-size: 15px;
+  }
+ 
+  .two {
+    font-size: 15px;
+  }
+  .dataset{
+    width: 80%;
+  }
+.dataset p:nth-child(1){
+    font-size:x-large;
+}
+.dataset h1{
+    font-size:40px;
+
+}
+.price p:nth-child(1){
+    font-size: 14px;
+}
+.price p:nth-child(2){
+    font-size: 40px;
+}
+.dataset p{
+  margin-top:10px ;
+font-size: medium;
+}
+
+.dataset button  {
+    padding: 12px 30px;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+
+  .info p {
+    max-width: 90%;
+    font-size: small;
+  }
+  nav{
+    padding: 10px;
+  }
+  .cart{
+  gap:10px;  
+  }
+  .info p:nth-child(1) {
+    font-size:20px;
+    color: white;
+  }
+  
+  .info h1 {
+    font-size: 35px;
+    color: white;
+  }
+  .shop button {
+    padding: 10px 30px;
+    font-size: small;
+  }
+  .shop a {
+    font-size: small;
+  }
+  .box {
+    position: relative;
+  width: 300px;
+  height: 300px;
+}
+.text p:nth-child(1){
+  color: #317189;
+  font-size: small;
+}
+.text p:nth-child(2){
+  color: #317189;
+  font-size: small;
+  font-weight: bold;
+}
+  .products {
+  font-size: x-large;
+  }
+  .one {
+    font-size: 10px;
+  }
+ 
+  .two {
+    font-size: 10px;
+  }
+  .dataset{
+    width: 90%;
+  }
+.dataset p:nth-child(1){
+    font-size:large;
+}
+.dataset h1{
+    font-size:30px;
+
+}
+.price p:nth-child(1){
+    font-size: 12px;
+}
+.price p:nth-child(2){
+    font-size: 35px;
+}
+.card{
+  font-size: small;
+}
+.card button{
+font-size: small;
+padding: 10px 28px;
+}
+.view button  {
+ font-size: small;
+ padding: 10px 28px;
+}
+
+.dataset p{
+font-size: small;
+margin-top:10px ;
+}
+.dataset button  {
+    padding: 12px 30px;
+  }
+
+}
